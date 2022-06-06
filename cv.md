@@ -23,5 +23,5 @@ I want to change my profession (now I am a CEO an constructing company). I try t
 ## Образование (включая пройденные курсы и тренинги)
     South Federal Unversity, mathematist, 1988 - 1993
 
-## English 
+## English  
     I can read simple texts and write anything, using online translator and/or dictionary
