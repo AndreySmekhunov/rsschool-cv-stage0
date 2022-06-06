@@ -6,7 +6,8 @@
 | ------------------------- | ------------------- |
 | Phone, WhatsApp, Telegram | +79034062750        |
 | email                     | smekhunov@gmail.com |
-| GitHub                    | < ссылка на гитхаб > |
+| GitHub                    | [(https://github.com/AndreySmekhunov)]|
+| Discord | Andrew_Rostov |
  
 ## About me:
 I want to change my profession (now I am a CEO an constructing company). I try to learn frontend and data science. I'm stupid, but stubborn. Many years ago I wrote programs 
@@ -18,7 +19,7 @@ I want to change my profession (now I am a CEO an constructing company). I try t
 [https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/javascript]
 
 ## Work experience
-    nothing
+    [https://github.com/AndreySmekhunov/rsschool-cv/edit/gh-pages/cv.md]
 
 ## Образование (включая пройденные курсы и тренинги)
     South Federal Unversity, mathematist
