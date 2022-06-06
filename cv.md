@@ -18,7 +18,7 @@ I want to change my profession (now I am a CEO an constructing company). I try t
 [https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/javascript]
 
 ## Work experience
-    тут должна быть ссылка на этот же проект. но она появится после пул реквеста. и уже наверное в хтмл файле
+[https://github.com/AndreySmekhunov/rsschool-cv/blob/gh-pages/cv.md)]
 
 ## Образование (включая пройденные курсы и тренинги)
     South Federal Unversity, mathematist, 1988 - 1993
