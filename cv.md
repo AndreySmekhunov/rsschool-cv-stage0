@@ -18,10 +18,10 @@ I want to change my profession (now I am a CEO an constructing company). I try t
 [https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/javascript]
 
 ## Work experience
-    nothing
+    тут должна быть ссылка на этот же проект. но она появится после пул реквеста. и уже наверное в хтмл файле
 
 ## Образование (включая пройденные курсы и тренинги)
-    South Federal Unversity, mathematist
+    South Federal Unversity, mathematist, 1988 - 1993
 
 ## English 
     I can read simple texts and write anything, using online translator and/or dictionary
