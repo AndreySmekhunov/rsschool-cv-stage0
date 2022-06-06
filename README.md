@@ -1,3 +1,3 @@
 # rsschool-cv
 rs school stage #0
-надо что-то написать чтобы был повод закоммитить
+[https://github.com/AndreySmekhunov/rsschool-cv/tree/gh-pages]
