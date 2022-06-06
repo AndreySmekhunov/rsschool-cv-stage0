@@ -6,7 +6,8 @@
 | ------------------------- | ------------------- |
 | Phone, WhatsApp, Telegram | +79034062750        |
 | email                     | smekhunov@gmail.com |
-| GitHub                    | < ссылка на гитхаб > |
+| Discord | Andrew_Rostov |
+| GitHub                    |  @AndreySmekhunov |
  
 ## About me:
 I want to change my profession (now I am a CEO an constructing company). I try to learn frontend and data science. I'm stupid, but stubborn. Many years ago I wrote programs 
