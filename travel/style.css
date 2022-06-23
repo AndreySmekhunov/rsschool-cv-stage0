@@ -15,16 +15,26 @@
   flex-direction: column;
   justify-content: space-between;
   }
+  .main-title {
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 1440px;
+    height: 550px;
+    background-image: url("images/garrett-parker-DlkF4-dbCOU-unsplash 1.jpg");
+    background-color: #777777;
+  }
   .header {
   color: #ffffff;
   background-color: #F2785C;
   position: absolute;
   opacity: 0.5;
-  width: 100%;
+  width: 1440 px;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
-  top: 0; 
-
   height: 90px;
   }
   .header-title {
