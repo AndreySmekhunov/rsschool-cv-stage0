@@ -5,9 +5,8 @@
     scroll-behavior: smooth; 
   }
   body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   min-height: 100vh;
-  margin: 30 0 0 0; 
   padding: 0;
   display: flex;
   height: 3600px;
@@ -21,9 +20,15 @@
     left: 0;
     top: 0;
     width: 1440px;
-    height: 550px;
+    height: 765px;
     background-image: url("images/garrett-parker-DlkF4-dbCOU-unsplash 1.jpg");
     background-color: #777777;
+  }
+  h1 {
+      margin-top: -20px;
+  }
+  h6 {
+    margin-top: -50px;
   }
   .header {
   color: #ffffff;
@@ -37,12 +42,57 @@
   align-items: center;
   height: 90px;
   }
+  .main-header {
+    position: relative;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 44px;
+    width: 892px;
+    height: 422px;
+    left: 120px;
+    top: 122px;
+  }
   .header-title {
-    font-size: 24px;
+    font-size: 30px;
     display: flex;
     width: 360px;
     align-items: center;
     justify-content: center;
+  }
+  .search-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    bottom: 10px;
+    color: #ff0000;
+    background-color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.5;
+    border-radius: 10px;
+
+  }
+  .three-steps {
+    position: absolute;
+    display: flex;
+    width: 1177px;
+    height: 247px;
+    left: 131px;
+    top: 845px;
+    border: solid 1px #ff0000;
+
+  }
+  .destination-class {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 2520px;
+    height: 1042px;
+    left: -711px;
+    top: 930px;
+    border: solid 1px #ff0000;
   }
 
   .footer {
