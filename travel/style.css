@@ -1,32 +1,47 @@
 * {
     box-sizing: border-box;
+ 
 
   }
   html {
     scroll-behavior: smooth; 
   }
+  img {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
   min-height: 100vh;
   padding: 0;
-  height: 3600px;
-  width: 1440px;
-
+  height: 3860px;
+  max-width: 1440px;
+  width:100%;
+  align-content: center;    
+  }
+  .favicon {
+    height: 30px;
+    width: 30px;
   }
   .nav {
-    width: 50%;
+    flex: 50% 0 0;
+
   }
   .nav-list {
     display: flex;
-    
+    margin: 0 60px 0 0;
     justify-content: flex-end;
     list-style: none;
   }
   .nav-link {
-    padding: 0 20px 0 20px;
+    padding: 0 0px 0 48px;
     line-height: 30px;
+    font-size: 15px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     color: #ffffff;
     transition: color 0.5s;
     }
@@ -34,30 +49,31 @@
       color: #0000ff;
     }
   
-  .main-title {
-    position: absolute;
-    display: flex;
-    left: 0;
-    top: 0;
-    width: 1440px;
+  .head-picture {
+    width: 100%;
     height: 765px;
     background-image: url("images/garrett-parker-DlkF4-dbCOU-unsplash1.jpg");
     background-color: #777777;
+    margin-bottom: 50px;
   }
   h1 {
-      margin-top: -20px;
+      margin-top: -100px;
+      font-weight: 700;
   }
   h6 {
-    margin-top: -50px;
+    margin-top: 0;
   }
+  h2 {
+    font-size: 32 px;
+  }
+
   .header {
   color: rgba(255,255,255,0.7);
   background-color: rgba(242, 120, 92, 0.7);
-  position: absolute;
-  width: 1440px;
-  top: 0;
-  left: 0;
+  box-shadow: 0 5px 5px #707070;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 90px;
   }
@@ -65,7 +81,7 @@
     position: relative;
     color: #ffffff;
     font-family: 'Roboto Slab', serif;
-    font-size: 44px;
+    font-size: 52px;
     width: 892px;
     height: 422px;
     left: 120px;
@@ -74,34 +90,55 @@
   .header-title {
     font-size: 30px;
     display: flex;
-    width: 25%;
+    flex: 25% 0 0;
     align-items: center;
-    justify-content: center;
+    padding: 0 0 0 120px;
+    justify-content: left;
+  }
+  .undertitle {
+    font-size: 18px;
+    margin-top: -42px;
+    font-style: italic;
+    font-weight: 500;
   }
   .search-form {
     position: relative;
     display: flex;
+    margin-top: 55px;
     align-items: center;
     justify-content: space-between;
-    height: 90px;
-    bottom: 10px;
-    color: rgba(255, 0, 0, 0.5);
+    height: 95px;
     background-color: rgba(255, 255, 255, 0.5);
+
+    border-radius: 10px;
+  }
+  input {
     font-size: 24px;
     font-weight: bold;
-    border-radius: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
 
+    border: none;
+    color: rgba(255, 0, 0, 0.5);
+    background-color: transparent;
   }
+  input :active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+::placeholder { 
+  color: rgba(255, 0, 0, 0.5);
+  opacity: 1; 
+}
   .three-steps {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
-    width: 1177px;
+    width: 100%;
     height: 247px;
-    left: 131px;
-    top: 845px;
+
 
   }
   .section-header {
@@ -110,27 +147,31 @@
     width: 100%;
     height: 50px;
     color: #F2785C;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 32px;
+   text-align: center;
+    font-size: 26px;
     font-weight: 600;
     margin-top: 0px;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 0px;
   
   }
   .icon-button {
     border-radius: 5px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 100px;
+    margin-top: 0px;
   
   }
 
-  .row-3steps {
+  .row-3steps-pct {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 75px;
+    width: 100%;
+  }
+  .row-3steps-text {
+    display: flex;
+    justify-content: space-around;
     font-family: 'Roboto Slab', serif;
     color:#000099;
     font-size: 18px;
@@ -140,28 +181,29 @@
   }
 
   .destination-section {
-    position: absolute;
+    position: relative;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 2520px;
-    height: 1042px;
+    height: 1080px;
     left: -540px;
-    top: 1189px;
-    margin: 0px;
+
+    margin-top: 95px;
+    margin-bottom: 70px;
     padding: 0;
   }
   .destination-content {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow: hidden;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 880px;
-    top: 0px;
-    margin-top: 0px;
+    top: 35px;
+    margin-bottom: 20px;
   }
   .destination-image {
     border-radius: 20px;
@@ -174,36 +216,52 @@
     align-items: center;
     width: 100%;
     height: 65px;
-    bottom: 0px;
     justify-items: center;
+    margin-bottom: 0px;
+  }
+  .dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0 7px;
+    background-color: #f5b0a0;  
+  }
+  .dot:hover {
+    background-color: #0000ff;
+    cursor: pointer;
+  }
+  .dot-select {
+    background-color: #9e3c26
   }
   .section-small-button {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    flex: 25% 0 0;
     height: 30px;
     bottom: 0px;
     justify-items: center;
   }
-  .stories-header {
-    position: absolute;
-    width: 1201px;
-    height: 60px;
-    left: 119px;
-    top: 2311px;
-  }
+
   .travel-stories {   
-  position: absolute;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 1201px;
-    height: 1322px;
-    left: 119px;
-    top: 2311px;
-    z-index: 1;
-
+    width: 100%;
+    height: 1331px;
+    margin-top: 40px;
+    background-image: url("images/Rectangle33.jpg");
+  }
+  .stories-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1271px;
+ 
+    background-color: #bbbbbb;
+    opacity: 0.7;
   }
   .stories-content {
     position: relative;
@@ -213,52 +271,38 @@
     flex-wrap: wrap;
     width: 100%;
     height: 1220px;
+    margin-bottom: -45px;
     left: 0px;
-    top: 0px;
     padding:0;
-  
+    z-index: 1;
+  }
+  .content-row {
+   display: flex;
+   justify-content: space-around; 
+   margin: 0 8% -20px 8%;
   }
   .stories-image {
-    width: 400px;
-    height: 250px;
+    flex: 33% 0 0;
+    height: auto;
     border-radius: 20px;
-    margin-top: 90px;
-    margin-bottom: -60px;
-  
+    margin: 45px 0px 0px 0px;
   
   }
   .stories-text {
-    width: 720px;
-    margin-left: 40px;
-    margin-right: 30px;
-    margin-top: 60px;
-    margin-bottom: -50px;
+    flex: auto;
+    margin: 20px 10px -20px 40px;
   
     font-family: 'Roboto Slab', serif;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 400;
     color: #000099;
   }
-  .footer-image {
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  width: 1442px;
-  height: 1331px;
-  left: 0 px;
-  top: 2404px;  
- 
-  background-image: url("images/Rectangle33.jpg");
+  .stories-title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: -20px;
   }
-  .footer-background {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 1442px;
-    height: 1286px;
-    background-color: #bbbbbb;
-    opacity: 0.7;
-  }
+
   .footer{
     position: relative;
     bottom: 0;
@@ -266,8 +310,8 @@
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    width: 1442px;
-    height: 45px;
+    width: 100%;
+    height: 60px;
   }
   .contacts {
       display: flex;
@@ -293,16 +337,18 @@
     }
     .link:hover {
     color: #ff0000;
+    cursor: pointer;
     }
     .button {
       position: relative;
-      width: 260px;
-      height: 65px;
+      width: 230px;
+      height: 60px;
       background-color: #0D606F;
       color: #ffffff;
       font-size: 26px;
       margin: 25px;
-      border-radius: 5px;
+      cursor: pointer;
+      border-radius: 10px;
       border: none;
     }
     .button:hover {
@@ -316,8 +362,9 @@
       display:flex;
       align-items: center;
       justify-content: center;
+      margin: 0 0 0 20px;
       width: 100px;
-      height: 30px;
+      height: 40px;
       font-size: 16px;
       align-items: center;
     }
