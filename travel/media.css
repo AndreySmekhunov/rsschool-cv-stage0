@@ -1,0 +1,94 @@
+@media screen and (min-width: 961px) and (max-width: 1230px) {
+    .stories-text {
+
+        font-size: 18px;
+        line-height: 22px;
+
+      }
+    .stories-title {
+
+        font-size: 32px;
+        line-height: 36px;
+      }
+    .header-title {
+        font-size: 28px;
+        padding: 0 0 0 40px;
+      }
+      .search-form {
+        width: 900px;
+        padding: 0 0 0 10px;
+      }
+      .main-header {
+
+        font-size: 76px;
+        line-height: 88px;
+        width: 800px;
+        height: 350px;
+        left: 40px;
+      }
+}
+
+@media screen and (min-width: 320px) and (max-width: 960px) {
+    .stories-text {
+
+        font-size: 16px;
+        line-height: 20px;
+
+      }
+      h2 {
+        font-size: 32px;
+        line-height: 46px;
+      }  
+    .stories-title {
+
+        font-size: 26px;
+        line-height: 30px;
+      } 
+
+      .header-title {
+        font-size: 24px;
+        padding: 0 0 0 20px;
+      }
+
+      .search-form {
+        width: 700px;
+        padding: 0 0 0 10px;
+      }
+      input {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .main-header {
+
+        font-size: 66px;
+        line-height: 78px;
+        width: 700px;
+        height: 300px;
+        left: 30px;
+      }
+      .nav-link {
+        padding: 0 5px 0 5px;
+        font-size: 14px;
+        line-height: 18px;
+        }
+      .destination-image {
+            height: 600px;
+            width: 600px;
+        }   
+      .destination-content {
+        height: 750px;
+        top: 0px;
+        margin-bottom: 20px;
+        }  
+        .destination-section {
+            width: 2000px;
+            height: 850px;
+            left: -540px;
+        
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 0;
+          }
+}
+
+      
