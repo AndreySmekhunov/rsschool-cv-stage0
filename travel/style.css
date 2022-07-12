@@ -5,32 +5,39 @@
   }
   html {
     scroll-behavior: smooth; 
+    overflow-x: hidden;
   }
 
   /* burger-menu */
   .burger {
       display: none;
       position: fixed;
-      top: 0;
-      right: 0;
+      top: 40px;
+      left: 210px;
       width: 165px;
       height: 250px;
-      padding: 44px 15px 30px 44px;
-      background: #F2785C;
-      font-family: 'Red Hat Text';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 21px;
-      color: #FFFFFF;
-
-    
+      padding: 39px 15px 30px 44px;
+      background: #F2785C;  
+      border-radius: 10px;
+      box-shadow: 0 3px 4px #808080;
+      z-index: 2;
   }
+
   .burger.active {
-    display: flex;
-    justify-content: space-around;
+    display: block;
+  }
+  .burger-line {
     text-decoration: none;
-    color: #ffffff;
+    color: #ffffff; 
+    font-family: 'Red Hat Text';
+    text-align: right;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 31px; 
+  }
+  .burger-list {
+  text-align: right;
   }
   .burger li {
     list-style-type: none;
