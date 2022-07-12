@@ -83,7 +83,7 @@
   }
   .search-form {
     position: absolute;
-    top: 20px;
+    top: 0px;
     left: 15px;
     margin: 0;
     align-items: center;
@@ -105,7 +105,7 @@
     width: 360px;
     height: 170px;
     margin: 0 auto;
-    top: 271px;
+    top: 267px;
     display: flex;
     justify-content: space-between;
   }
@@ -132,7 +132,7 @@
     justify-content: space-between;
     width: 360px;
     left: 15px;
-    margin: 0;
+    margin: 13px 0 0 0;
     height: 70px;
   }
   .row-3steps-text {
@@ -144,19 +144,21 @@
     line-height: 12px;
     width: 360px;
     left: 15px;
+
   }
   .step-txt {
-    padding: 0;
+    padding: 4px 0 0 0;
     width: 100px;
     text-align: center;
   }
 
   .destination-section {
     position: absolute;
-    width: 360px;
+    width: 390px;
+    
+    top: 440px;
+    margin: 0;
     left: 15px;
-    top: 444px;
-    margin: auto;
     padding: 0;
   }
   .destination-content {
@@ -166,14 +168,17 @@
     overflow: hidden;
     width: 1360px;
     top: 20px;
+    padding: 0;
     margin: 0px;
   }
   .destination-image {
-    margin: 0px;
+
     width: 360px;
     height: 210px;
     padding: 0;
     border-radius: 20px;
+    margin: 7px;
+    padding: 0;
   }
   .section-button {
     position: relative;
@@ -202,13 +207,13 @@
 
   .story-section-header {
     position:absolute;
-    top: 853px;
+    top: 753px;
     height: 30px;
     width: 390px;
   }
   .travel-stories {   
     position:absolute;
-    top: 883px;
+    top: 753px;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -244,8 +249,8 @@
    margin: 0;
   }
   .stories-image {
-    width: 100px;
-    height: 100px;
+    width: 155px;
+    height: 130px;
     border-radius: 20px;
     margin: 0px 0px 0px 0px;
   

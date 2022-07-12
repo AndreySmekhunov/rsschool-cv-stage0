@@ -5,4 +5,11 @@ console.log("Вёрстка семантическая +20 (+18)")
 console.log("Вёрстка соответствует макету +48 ( +24)")
 console.log("Требования к css + 12 (+6)")
 console.log("Интерактивность, реализуемая через css +20 (+20)")
+
+let menuBtn = document.querySelector(".burger-button");
+let menu = document.querySelector(".burger");
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+})
  
