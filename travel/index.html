@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel #1</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="390.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto+Slab:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
-
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
 
 </head>
 <body>
     <div class = "head-picture"> 
         <header class="header">
-            <div class = "header-title"> <img class = "favicon" src = "images/ico/favicon.ico" alt = "фавикон"><p>Travel Portal </p></div>
+            <div class = "header-title"> <img class = "favicon" src = "images/ico/Vector.png" alt = "фавикон"><p class="header-title-text">Travel Portal </p></div>
+        
             <nav class = "nav">
             <ul class="nav-list">
                 <li class="nav-item"><a href="#HowItWorks" class="nav-link">How It Works</a></li>
@@ -26,9 +28,10 @@
             </nav>
             <div class = "section-small-button">
                 <div class = "button small-button"><p>Login</p></div>
-            </div>    
+            </div>  
+            <img class = "burger-button" src = "images/ico/burger.png" alt = "button">      
         </header>
-      <section id = "#HowItWorks" class = "main-header">
+      <section id = "HowItWorks" class = "main-header">
         <h1>Explore the beauty of the World</h1>
         <p class = "undertitle">Receive personaled recomendations for countries, hotels, activities and more</p>
 
@@ -40,7 +43,23 @@
       </div>   
     </div>    
 
-    
+  <!-- burger-menu -->
+  <div class="burger">
+    <div><img class = "burger-button" src = "images/ico/burger.png" alt = "button"></div>
+	<nav>
+		<li><a href="#HowItWorks">How It Works</a></li>
+		<li><a href="#PlanYourTrip">Plan Your Trip</a></li>
+		<li><a href="#Destinations"></a></li>
+		<li><a href="#TravelStories">Travel Stories</a></li>		
+        <li><a href="#">Account</a></li>
+		<li><a href="#Contacts">Social Media</a></li>
+	</nav>
+</div>
+  <!-- burger-menu -->
+
+
+
+
     <main>
 
      <section id = "#PlanYourTrip" class = "three-steps">
@@ -48,18 +67,18 @@
             <h2>3 steps to the perfect trip</h2>
         </div>
         <div class = "row-3steps-pct">
-            <div class = "icon-button"><img src = "images/ico/bicycle.ico" alt = "bicycle"></div>
-            <div class = "icon-button"><img src = "images/ico/calendar.ico" alt = "calendar"></div>
-            <div class = "icon-button"><img src = "images/ico/flight.ico" alt = "plane"></div>
+            <div class = "icon-button"><img class = "icon" src = "images/ico/bike.png" alt = "bicycle"></div>
+            <div class = "icon-button"><img class = "icon" src = "images/ico/calendar.png" alt = "calendar"></div>
+            <div class = "icon-button"><img class = "icon" src = "images/ico/plane.png" alt = "plane"></div>
         </div>
         <div class = "row-3steps-text">
-            <p>Tell us what you want to do</p>
-            <p>Share us preferable dates</p>
-            <p>We will give you recommendations</p>
+            <div class = "step-txt">Tell us what you want to do</div>
+            <div class = "step-txt">Share us preferable dates</div>
+            <div class = "step-txt">We will give you recommendations</div>
         </div>    
         </section>
         
-        <section id = "Destination" class = "destination-section">
+        <section id = "Destinations" class = "destination-section">
             <div class = "section-header">
                 <h2>Popular destinations</h2>
             </div>
@@ -74,15 +93,16 @@
                 <div class = "dot"></div>
              </div>
             <div class = "section-button"> 
-               <button class = "button">🡢 Find More</button> 
+               <button class = "button">➔ Find More</button> 
             </div>
             
 
 
         </section>
-
-        <div id = TravelStories class = "section-header">
-            <h2>Travel stories</h2>
+        <div class = "story-section-header">
+            <div id = TravelStories class = "section-header">
+                <h2>Travel stories</h2>
+            </div>
         </div>
 
         <section class = "travel-stories">
@@ -143,15 +163,15 @@
                     </div>    
                 </div> 
                     <div class = "section-button">
-                        <button class = "button">🡢 See More</button> 
+                        <button class = "button"> ➔ See More</button> 
                     </div>  
                 
             </div>
 
 
 
-                <footer class="footer">
-                    <p>All Right Reserved (c) Travel Portal</p>
+                <footer id = "Contacts" class="footer">
+                    <p class = "copyright">All Right Reserved (c) Travel Portal</p>
                     <ul class = "contacts">
                         <li><a href = "https://github.com/AndreySmekhunov"> <img class = "icons link" src = "images/ico/instragram-icon-png-free-download.svg" alt = "Contacts"></a></li>
                         <li><a href = "https://github.com/AndreySmekhunov"> <img class = "icons link" src = "images/ico/youtube-icon-png-free-download.svg" alt = "Contacts"></a></li>
