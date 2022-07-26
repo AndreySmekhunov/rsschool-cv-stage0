@@ -330,6 +330,7 @@
     flex: 25% 0 0;
     height: 30px;
     bottom: 0px;
+    padding-right: 20px;
     justify-items: center;
   }
 

@@ -27,9 +27,9 @@
                 <li class="nav-item"><a href="#TravelStories" class="nav-link">Travel Stories</a></li>
                 </ul>
             </nav>
-            <div class = "section-small-button">
-                <div class = "button small-button"><p>Login</p></div>
-            </div>  
+            <div>
+                <div id = "logButton" class = "button small-button"><p>Login</p></div>
+            </div> 
             <img class = "burger-button" src = "images/ico/burger.png" alt = "button">      <!-- burger-button -->
         </header>
       <section id = "HowItWorks" class = "main-header">
@@ -196,17 +196,23 @@
                 </footer> 
         </section>
 
-        <div id = "log" class = "Login"></div>
+    <div id = "log" class = "LoginWindow">
         <h3>Log in to your account</h3>
         <button class = "popup-button">Sign In with Facebook</button>
-        <button class = "popup-button">Sign In with Google</button>
-        <p>E-mail:</p>
-        <input type="text" placeholder="Your E-mail">
-        <p>Password</p>
-        <input type="text" placeholder="Your Password">
-        <button class = "popup-button">Sign In </button>
-        <p> Forgot Your Password?</p>
-        <p> Don't have an account? <a href = "register">Register</a></p>
+        <button class = "popup-button white-button">Sign In with Google</button>
+        <div class = "autorization"> 
+            <p>-----------------------------------------------------OR---------------------------------------------------------</p>
+            <p>E-mail:</p>
+            <input type="text" placeholder=" ">
+            <p>Password</p>
+            <input type="text" placeholder=" ">
+        </div>
+        <button class = "popup-button green-button">Sign In </button>
+        <div class = "popup-footer">
+            <p> Forgot Your Password?</p>
+            <p> Don't have an account? <a href = "register">Register</a></p>
+        </div>
+    </div>
 
 
     </main>
