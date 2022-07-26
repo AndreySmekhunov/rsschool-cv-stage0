@@ -14,19 +14,14 @@ let counter = 1;
 
 let dotLine = document.querySelector(".section-button")
 let dots = dotLine.querySelectorAll('.dot');
-console.log(dots);
 let selected = dots[1]; 
 let unselected = dots[0];
 let unselected1 = dots[2];
-console.log(selected);
-console.log(unselected);
-console.log(counter);
-
+let pointer = 0;
 
 
 for (let i = 0; i < l; i++) {
 	divs[i].onclick = function(event){
-		let pointer = 0;
 		for (let i = 0; i < l; i++){
 			if (divs[i] === event.target) pointer = i;
 		}
@@ -44,15 +39,15 @@ for (let i = 0; i < l; i++) {
 
 	}
 	divs = section.querySelectorAll('.destination-image');
-
+	colorDot();
+	}
+}	
+let colorDot = function() {
 	dotLine = document.querySelector(".section-button")
 	dots = dotLine.querySelectorAll('.dot');
-	console.log(dots);
-	console.log('counter = ', counter);
+
 	for (let i = 0; i < l; i++){
-		dotLine.removeChild(dots[i]);
-		console.log(dotLine.querySelectorAll('.dot'))
-	}
+		dotLine.removeChild(dots[i]);	}
 	switch (counter) {
 		case 0:
 			dotLine.appendChild(selected);
@@ -70,11 +65,39 @@ for (let i = 0; i < l; i++) {
 			dotLine.appendChild(selected);
 		break;
 	}
-	console.log(dotLine.querySelectorAll('.dot'))
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function nextSlide() {
+    showSlides(slideIndex += 1);
+}
+
+function previousSlide() {
+    showSlides(slideIndex -= 1);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let slides = document.getElementsByClassName("mobile-image");
+
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
 
 
+    for (let slide of slides) {
+        slide.style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+	counter = slideIndex - 1;
+	colorDot();
 
-	}
-}	
-
-
+}

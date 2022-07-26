@@ -7,6 +7,12 @@
     scroll-behavior: smooth; 
     overflow-x: hidden;
   }
+  .previous, .next {
+    display: none;
+  }
+
+
+
 
   /* burger-menu */
   .burger {
@@ -258,7 +264,9 @@
   .step-txt {
     padding: 20px;
   }
-
+  .destination-mobile {
+    display: none;
+  }
   .destination-section {
     position: relative;
     display: flex;
