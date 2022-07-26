@@ -1,5 +1,4 @@
 @media screen and (min-width: 320px) and (max-width: 719px) {
-
   body {
     height: 1425px;
   }
@@ -7,6 +6,57 @@
     overflow-x: hidden; 
     max-width: 720px;
   }
+.previous, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -40px;
+  padding: 16px;
+  color: #F2785C;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  display: block;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.destination-section {
+  position: absolute;
+  width: 390px;
+  
+  top: 440px;
+  margin: 0;
+  left: 15px;
+  padding: 0;
+}
+.destination-content {
+  display: none;
+}
+.destination-mobile {
+  display: flex;
+  position: relative;
+  height: 210px;
+  overflow: hidden;
+  width: 360;
+  top: 20px;
+  padding: 0;
+  margin: 0;
+}
+.mobile-image {
+  align-items: center;
+  border-radius: 20px;
+  padding: 0;
+  margin: auto;
+}
+
+
+
+
+
   .favicon {
     height: 30px;
     width: 30px;
@@ -156,35 +206,6 @@
     padding: 4px 0 0 0;
     width: 100px;
     text-align: center;
-  }
-
-  .destination-section {
-    position: absolute;
-    width: 390px;
-    
-    top: 440px;
-    margin: 0;
-    left: 15px;
-    padding: 0;
-  }
-  .destination-content {
-    display: flex;
-    position: relative;
-    height: 210px;
-    overflow: hidden;
-    width: 1360px;
-    top: 20px;
-    padding: 0;
-    margin: 0px;
-  }
-  .destination-image {
-
-    width: 360px;
-    height: 210px;
-    padding: 0;
-    border-radius: 20px;
-    margin: 7px;
-    padding: 0;
   }
   .section-button {
     position: relative;

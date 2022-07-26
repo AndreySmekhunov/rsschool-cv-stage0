@@ -26,24 +26,6 @@
         height: 350px;
         left: 40px;
       }
-      .destination-image {
-        height: 700px;
-        width: 700px;
-    }   
-  .destination-content {
-    height: 850px;
-    top: 20px;
-    margin-bottom: 20px;
-    }  
-    .destination-section {
-        width: 2000px;
-        height: 950px;
-        left: -400px;
-    
-        margin-top: 50px;
-        margin-bottom: 50px;
-        padding: 0;
-      }
 }
 
 @media screen and (min-width: 791px) and (max-width: 960px) {
@@ -89,24 +71,7 @@
         font-size: 14px;
         line-height: 18px;
         }
-      .destination-image {
-            height: 600px;
-            width: 600px;
-        }   
-      .destination-content {
-        height: 750px;
-        top: 0px;
-        margin-bottom: 20px;
-        }  
-        .destination-section {
-            width: 2000px;
-            height: 850px;
-            left: -400px;
-        
-            margin-top: 50px;
-            margin-bottom: 50px;
-            padding: 0;
-          }
+
 }
 
 @media screen and (min-width: 720px) and (max-width: 790px) {
@@ -158,23 +123,5 @@
         }
         .section-small-button {
             flex: 20% 0 0;
-          }
-      .destination-image {
-            height: 400px;
-            width: 400px;
-        }   
-      .destination-content {
-        height: 650px;
-        top: 0px;
-        margin-bottom: 20px;
-        }  
-        .destination-section {
-            width: 1400px;
-            height: 750px;
-            left: -300px;
-        
-            margin-top: 50px;
-            margin-bottom: 0px;
-            padding: 0;
           }
 }
