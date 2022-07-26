@@ -1,3 +1,31 @@
+let openLoginWindow = false;
+let LW = document.getElementById('logButton');
+LW.onclick = function(event) {
+	let logForm = document.querySelector(".LoginWindow");
+	logForm.style.display = 'flex';
+	openLoginWindow = true;
+	event.stopPropagation();
+	}
+
+let body = document.getElementsByTagName("body");
+
+body[0].onclick = function(event){
+	if(!openLoginWindow)
+		return;
+	let isLoginWindow = false;
+	for(let i=0;i<event.path.length;i++){
+		if( event.path[i].classList && event.path[i].classList[0] == "LoginWindow")
+			isLoginWindow = true;
+	}
+	if(!isLoginWindow){
+		let logForm = document.querySelector(".LoginWindow");
+		logForm.style.display = 'none';
+	}
+
+	
+}
+
+
 
 let menuBtn = document.querySelector(".burger-button");
 let menu = document.querySelector(".burger");
