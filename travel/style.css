@@ -7,6 +7,12 @@
     scroll-behavior: smooth; 
     overflow-x: hidden;
   }
+  .previous, .next {
+    display: none;
+  }
+
+
+
 
   /* burger-menu */
   .burger {
@@ -258,15 +264,17 @@
   .step-txt {
     padding: 20px;
   }
-
+  .destination-mobile {
+    display: none;
+  }
   .destination-section {
     position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 2520px;
-    height: 1080px;
-    left: -540px;
+    width: 175%;
+    height: 75%;
+    left: -37.5%;
 
     margin-top: 95px;
     margin-bottom: 70px;
@@ -283,8 +291,10 @@
     height: 880px;
     top: 35px;
     margin-bottom: 20px;
+    scroll-behavior: smooth;
   }
   .destination-image {
+    cursor: pointer;
     border-radius: 20px;
     margin: 30px;
   }
