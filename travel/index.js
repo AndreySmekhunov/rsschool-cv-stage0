@@ -24,6 +24,10 @@ body[0].onclick = function(event){
 		logForm.style.display = 'none';
 	}
 }
+showData = function() {
+	console.log('est probytie')
+	alert('E-mail: ' + document.getElementById("mail").value + ' , Password: ' + document.getElementById("password").value)
+}
 
 changeSize = function() {
 	document.querySelector('h3').style.display = 'none';
@@ -55,7 +59,8 @@ returnToLogin = function() {
 }
 document.getElementById('Register').onclick = changeSize;
 document.getElementById('LogIn').onclick = returnToLogin;
-
+document.querySelector('.signup-button').onclick = showData;
+document.querySelector('.login-button').onclick = showData;
 
 
 let menuBtn = document.querySelector(".burger-button");
