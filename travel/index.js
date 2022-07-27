@@ -1,11 +1,13 @@
 let openLoginWindow = false;
 let LW = document.getElementById('logButton');
-LW.onclick = function(event) {
+openLogWin = function(event) {
 	let logForm = document.querySelector(".LoginWindow");
 	logForm.style.display = 'flex';
 	openLoginWindow = true;
 	event.stopPropagation();
 	}
+LW.onclick = openLogWin;
+document.getElementById('Account').onclick = openLogWin;
 
 let body = document.getElementsByTagName("body");
 
@@ -21,9 +23,38 @@ body[0].onclick = function(event){
 		let logForm = document.querySelector(".LoginWindow");
 		logForm.style.display = 'none';
 	}
-
-	
 }
+
+changeSize = function() {
+	document.querySelector('h3').style.display = 'none';
+	document.querySelector('h5').style.display = 'flex';
+	document.querySelector('.facebook-button').style.display = 'none';
+	document.querySelector('.google-button').style.display = 'none';
+	document.querySelector('.LoginWindow').style.height = '436px';
+	document.querySelector('.signup-button').style.display = 'none';
+	document.querySelector('.login-button').style.display = 'flex';
+	document.getElementById('forgotpassword').style.display = 'none';
+	document.getElementById('Register').style.display = 'none';
+	document.getElementById('LogIn').style.display = 'block';
+}
+returnToLogin = function() {
+	document.querySelector('h3').style.display = 'flex';
+	document.querySelector('h5').style.display = 'none';
+	document.querySelector('.facebook-button').style.display = 'flex';
+	document.querySelector('.google-button').style.display = 'flex';
+	if (window.screen.width > 719) 
+		document.querySelector('.LoginWindow').style.height = '660px'
+		else document.querySelector('.LoginWindow').style.height = '600px';
+	document.querySelector('.signup-button').style.display = 'flex';
+	document.querySelector('.login-button').style.display = 'none';
+	document.getElementById('forgotpassword').style.display = 'block';
+	document.getElementById('Register').style.display = 'block';
+	document.getElementById('LogIn').style.display = 'none';
+
+
+}
+document.getElementById('Register').onclick = changeSize;
+document.getElementById('LogIn').onclick = returnToLogin;
 
 
 
