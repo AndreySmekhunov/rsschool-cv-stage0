@@ -182,7 +182,7 @@
     padding: 0 0 0 40px;
     border-radius: 10px;
   }
-  input {
+  .input-search {
 
     font-family: 'Aleo';
     font-style: italic;
@@ -275,6 +275,7 @@
     width: 175%;
     height: 75%;
     left: -37.5%;
+    flex-wrap: nowrap;
 
     margin-top: 95px;
     margin-bottom: 70px;
