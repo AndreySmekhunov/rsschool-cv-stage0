@@ -91,16 +91,43 @@ function setCity(event) {
     myCity.blur();
   }
 }
-async function getQuotes() {
-  const quotes = 'data.json';
-  fetch(quotes)
-    .then(res => res.json())
-    .then(data => { 
-      console.log(data);
-    });
+function getQuotes() {  
+  const quotes = [
+    {
+  "text": "Ничто так не выдает принадлежность человека к низшим классам общества, как способность разбираться в дорогих часах и автомобилях",
+"author": "Виктор Пелевин. Generation 'П'"
+    },
+
+    {
+  "text": "Вера, которую не разделяет никто, называется шизофренией.",
+  "author": "Виктор Пелевин. Generation 'П'"
+},
+
+    {
+  "text": "Антирусский заговор, безусловно, существует – проблема только в том, что в нем участвует все взрослое население России.",
+  "author": "Виктор Пелевин. Generation 'П'"
+},
+
+    {
+  "text": "Когда не думаешь, многое становится ясно.",
+  "author": "Виктор Пелевин. Generation 'П'"
+},
+    {
+  "text": "В наше время люди узнают о том, что они думают, по телевизору.",
+  "author": "Виктор Пелевин. Generation 'П'"
+},
+
+    {
+  "text": "Милосердие в том, что вместо крематориев у вас телевизоры и супермаркеты. А истина в том, что функция у них одна.",
+  "author": "Виктор Пелевин. Generation 'П'"
 }
 
+]  
+let quoteNum = Math.round(Math.random()*(quotes.length - 1));
+  document.querySelector('.quote').textContent = quotes[quoteNum].text;
+  document.querySelector('.author').textContent = quotes[quoteNum].author;
 
+}
 
 
 getQuotes();
