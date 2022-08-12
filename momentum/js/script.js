@@ -2,6 +2,53 @@ const time = document.querySelector('.time');
 const dateString = document.querySelector('.date');
 const greetingPhrase = document.querySelector('.greeting');
 const dayTime = ['night', 'morning', 'afternoon', 'evening'];
+import playList from './playList.js';
+
+
+let isPlay = false;
+const audio = document.querySelector('audio');
+let playNum = 0;
+audio.src = playList[playNum].src;
+
+function playAudio() {
+  if (isPlay) {
+    audio.pause();
+    isPlay = false;
+  }
+  else {
+    audio.play();
+    isPlay = true;
+  }
+  document.querySelector('.play').classList.toggle('pause');
+  }
+  
+function playNext() {
+  playNum += 1;
+  if (playNum == playList.length) playNum = 0;
+  audio.currentTime = 0;
+  audio.src = playList[playNum].src;
+  isPlay = false;
+  playAudio();
+}  
+function playPrev() {
+  playNum -= 1;
+  if (playNum < 0) playNum = playList.length - 1;
+  audio.currentTime = 0;
+  audio.src = playList[playNum].src;
+  isPlay = false;
+  playAudio();
+}  
+
+
+document.querySelector('.play').addEventListener('click', playAudio);
+document.querySelector('.play-prev').addEventListener('click',playPrev);
+document.querySelector('.play-next').addEventListener('click', playNext);
+
+
+
+
+
+
 
 let myName = document.getElementById('myName');
 let myCity = document.getElementById('myCity');
@@ -131,12 +178,10 @@ let quoteNum = Math.round(Math.random()*(quotes.length - 1));
 
 
 getQuotes();
-showSlide();
+// showSlide();
 showTime();
 window.addEventListener('load', getWeather);
 // document.addEventListener('DOMContentLoaded', getWeather);
 myCity.addEventListener('keypress', setCity);
 
-showSlide();
-showTime();
 
