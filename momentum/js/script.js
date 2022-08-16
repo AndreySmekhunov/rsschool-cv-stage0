@@ -178,6 +178,9 @@ let quoteNum = Math.round(Math.random()*(quotes.length - 1));
 
 
 getQuotes();
+document.querySelector('.slide-prev').addEventListener('click',previousSlide);
+document.querySelector('.slide-next').addEventListener('click',nextSlide);
+document.querySelector('.change-quote').addEventListener('click',getQuotes);
 // showSlide();
 showTime();
 window.addEventListener('load', getWeather);
