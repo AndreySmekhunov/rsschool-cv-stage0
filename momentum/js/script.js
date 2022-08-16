@@ -10,39 +10,56 @@ const audio = document.querySelector('audio');
 let playNum = 0;
 audio.src = playList[playNum].src;
 
-function playAudio() {
-  if (isPlay) {
-    audio.pause();
-    isPlay = false;
-  }
-  else {
-    audio.play();
-    isPlay = true;
-  }
-  document.querySelector('.play').classList.toggle('pause');
-  }
   
-function playNext() {
+function nextTrack() {
   playNum += 1;
   if (playNum == playList.length) playNum = 0;
   audio.currentTime = 0;
   audio.src = playList[playNum].src;
-  isPlay = false;
-  playAudio();
+  if (!isPlay) isPlay = true;
+
 }  
-function playPrev() {
+function prevTrack() {
   playNum -= 1;
   if (playNum < 0) playNum = playList.length - 1;
   audio.currentTime = 0;
   audio.src = playList[playNum].src;
-  isPlay = false;
-  playAudio();
+  if (!isPlay) isPlay = true;
 }  
 
 
-document.querySelector('.play').addEventListener('click', playAudio);
-document.querySelector('.play-prev').addEventListener('click',playPrev);
-document.querySelector('.play-next').addEventListener('click', playNext);
+
+
+function playAudio() {
+  while (isPlay) {
+        if (audio.duration - audio.currentTime > -3) {  
+           let player = setInterval(audio.play, 100);
+          }
+        else {
+          nextTrack();
+        }  
+    
+      }
+  }
+
+function PlayButton() {
+  if (isPlay) {
+    isPlay = false;
+    clearInterval(audio.play);
+    audio.pause;
+  } 
+  else {
+    isPlay = true;
+    playAudio();
+  }
+ document.querySelector('.play').classList.toggle('pause');
+}
+
+
+document.querySelector('.play').addEventListener('click', PlayButton);
+document.querySelector('.play-prev').addEventListener('click',prevTrack);
+document.querySelector('.play-next').addEventListener('click', nextTrack);
+
 
 
 
@@ -96,7 +113,7 @@ window.addEventListener('beforeunload', setLocalStorage)
 function getLocalStorage() {
   if(localStorage.getItem('name')) 
     myName.value = localStorage.getItem('name');
-    else myName.value = '[Enter Name]';
+    else myName.placeholder = '[Enter Name]';
 
   if(localStorage.getItem('city')) 
   myCity.value = localStorage.getItem('city');
