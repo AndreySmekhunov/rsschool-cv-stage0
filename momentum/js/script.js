@@ -8,6 +8,7 @@ import playList from './playList.js';
 let isPlay = false;
 const audio = document.querySelector('audio');
 let playNum = 0;
+
 audio.src = playList[playNum].src;
 
   
@@ -17,6 +18,7 @@ function nextTrack() {
   audio.currentTime = 0;
   audio.src = playList[playNum].src;
   if (!isPlay) isPlay = true;
+  audio.play();
 
 }  
 function prevTrack() {
@@ -25,32 +27,18 @@ function prevTrack() {
   audio.currentTime = 0;
   audio.src = playList[playNum].src;
   if (!isPlay) isPlay = true;
+  audio.play();
+
 }  
-
-
-
-
-function playAudio() {
-  while (isPlay) {
-        if (audio.duration - audio.currentTime > -3) {  
-           let player = setInterval(audio.play, 100);
-          }
-        else {
-          nextTrack();
-        }  
-    
-      }
-  }
-
+ 
 function PlayButton() {
   if (isPlay) {
     isPlay = false;
-    clearInterval(audio.play);
-    audio.pause;
+    audio.pause();
   } 
   else {
     isPlay = true;
-    playAudio();
+    audio.play();
   }
  document.querySelector('.play').classList.toggle('pause');
 }
@@ -59,11 +47,6 @@ function PlayButton() {
 document.querySelector('.play').addEventListener('click', PlayButton);
 document.querySelector('.play-prev').addEventListener('click',prevTrack);
 document.querySelector('.play-next').addEventListener('click', nextTrack);
-
-
-
-
-
 
 
 
@@ -79,6 +62,10 @@ function showTime() {
     time.textContent = date.toLocaleTimeString();    
     dateString.textContent = days[date.getDay()] + ', ' + months[date.getMonth()] + ' ' + date.getDate();
     greetingPhrase.textContent = `Good ${dayTime[Math.floor(date.getHours()/6)]},`
+    if (isPlay && (audio.duration - audio.currentTime < 0.1)){
+      nextTrack();
+    }
+
     setTimeout(showTime, 1000);
   }
 
