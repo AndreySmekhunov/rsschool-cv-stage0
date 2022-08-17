@@ -2,6 +2,53 @@ const time = document.querySelector('.time');
 const dateString = document.querySelector('.date');
 const greetingPhrase = document.querySelector('.greeting');
 const dayTime = ['night', 'morning', 'afternoon', 'evening'];
+import playList from './playList.js';
+
+
+let isPlay = false;
+const audio = document.querySelector('audio');
+let playNum = 0;
+
+audio.src = playList[playNum].src;
+
+  
+function nextTrack() {
+  playNum += 1;
+  if (playNum == playList.length) playNum = 0;
+  audio.currentTime = 0;
+  audio.src = playList[playNum].src;
+  if (!isPlay) isPlay = true;
+  audio.play();
+
+}  
+function prevTrack() {
+  playNum -= 1;
+  if (playNum < 0) playNum = playList.length - 1;
+  audio.currentTime = 0;
+  audio.src = playList[playNum].src;
+  if (!isPlay) isPlay = true;
+  audio.play();
+
+}  
+ 
+function PlayButton() {
+  if (isPlay) {
+    isPlay = false;
+    audio.pause();
+  } 
+  else {
+    isPlay = true;
+    audio.play();
+  }
+ document.querySelector('.play').classList.toggle('pause');
+}
+
+
+document.querySelector('.play').addEventListener('click', PlayButton);
+document.querySelector('.play-prev').addEventListener('click',prevTrack);
+document.querySelector('.play-next').addEventListener('click', nextTrack);
+
+
 
 let myName = document.getElementById('myName');
 let myCity = document.getElementById('myCity');
@@ -15,6 +62,10 @@ function showTime() {
     time.textContent = date.toLocaleTimeString();    
     dateString.textContent = days[date.getDay()] + ', ' + months[date.getMonth()] + ' ' + date.getDate();
     greetingPhrase.textContent = `Good ${dayTime[Math.floor(date.getHours()/6)]},`
+    if (isPlay && (audio.duration - audio.currentTime < 0.1)){
+      nextTrack();
+    }
+
     setTimeout(showTime, 1000);
   }
 
@@ -49,7 +100,7 @@ window.addEventListener('beforeunload', setLocalStorage)
 function getLocalStorage() {
   if(localStorage.getItem('name')) 
     myName.value = localStorage.getItem('name');
-    else myName.value = '[Enter Name]';
+    else myName.placeholder = '[Enter Name]';
 
   if(localStorage.getItem('city')) 
   myCity.value = localStorage.getItem('city');
@@ -131,12 +182,13 @@ let quoteNum = Math.round(Math.random()*(quotes.length - 1));
 
 
 getQuotes();
-showSlide();
+document.querySelector('.slide-prev').addEventListener('click',previousSlide);
+document.querySelector('.slide-next').addEventListener('click',nextSlide);
+document.querySelector('.change-quote').addEventListener('click',getQuotes);
+// showSlide();
 showTime();
 window.addEventListener('load', getWeather);
 // document.addEventListener('DOMContentLoaded', getWeather);
 myCity.addEventListener('keypress', setCity);
 
-showSlide();
-showTime();
 
