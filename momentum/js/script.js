@@ -3,6 +3,12 @@ const dateString = document.querySelector('.date');
 const greetingPhrase = document.querySelector('.greeting');
 const dayTime = ['night', 'morning', 'afternoon', 'evening'];
 import playList from './playList.js';
+playList.forEach(el => {
+  let li = document.createElement('li');
+  li.classList.add('play-item');
+  li.textContent = el.title;
+  document.querySelector('.play-list').append(li);
+})
 
 
 let isPlay = false;
@@ -11,13 +17,27 @@ let playNum = 0;
 
 audio.src = playList[playNum].src;
 
-  
+function changeTrack(e) {
+let target = e.target;
+console.log('any');
+  let title = e.target.textContent;
+  playList.forEach(el => {if (el.title == title) audio.src = el.src;});
+  audio.currentTime = 0;
+  if (!isPlay) {
+  isPlay = true;
+  document.querySelector('.play').classList.toggle('pause');
+  }
+  audio.play();
+}  
 function nextTrack() {
   playNum += 1;
   if (playNum == playList.length) playNum = 0;
   audio.currentTime = 0;
   audio.src = playList[playNum].src;
-  if (!isPlay) isPlay = true;
+  if (!isPlay) {
+  isPlay = true;
+  document.querySelector('.play').classList.toggle('pause');
+  }
   audio.play();
 
 }  
@@ -26,7 +46,10 @@ function prevTrack() {
   if (playNum < 0) playNum = playList.length - 1;
   audio.currentTime = 0;
   audio.src = playList[playNum].src;
-  if (!isPlay) isPlay = true;
+  if (!isPlay) {
+    isPlay = true;
+    document.querySelector('.play').classList.toggle('pause');
+  }
   audio.play();
 
 }  
@@ -47,6 +70,7 @@ function PlayButton() {
 document.querySelector('.play').addEventListener('click', PlayButton);
 document.querySelector('.play-prev').addEventListener('click',prevTrack);
 document.querySelector('.play-next').addEventListener('click', nextTrack);
+document.querySelector('.play-list').addEventListener('click', changeTrack);
 
 
 
