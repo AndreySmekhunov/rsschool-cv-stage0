@@ -483,7 +483,7 @@ const difficulties = [
         hero = ancientsPerson;
     }
     ancientsPerson.id = ancientsData[i].id;
-    ancientsPerson.style.backgroundImage = `url(${ancientsData[i].cardFace})`;
+    ancientsPerson.style.backgroundImage = `url("${ancientsData[i].cardFace}")`;
     ancients.append(ancientsPerson);
   }
   document.querySelector('.ancientsBlock').addEventListener('click', selectAncients);
