@@ -206,10 +206,6 @@ const difficulties = [
         anyCard.random = Math.random();
         cardSetBrown.push(anyCard);
       }  
-      // cardSet.sort((a,b) => a.random - b.random);
-      // console.log(cardSet);
-      // это мы собрали все карты в одну кучу, указав для каждой адрес картинки и ключ, по которому будем случайно выбирать карту
-      // тут надо убрать (не добавлять) легкие или сложные карты для двух режимов. завтра
 
     }
     function createColorDeck() {

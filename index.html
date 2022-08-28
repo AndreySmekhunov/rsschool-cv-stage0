@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,19 +16,86 @@
             <ul class="nav-list">
               <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
               <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
-              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>  
+              <li class="nav-item"><a href="#education" class="nav-link">Еducation</a></li>
+              <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>  
+              <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+              <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+              <li class="nav-item"><a href="#english" class="nav-link">Еnglish</a></li>
             </ul>
           </nav>
 
     </header>
     
-    <main class="main">
+    <main>
+          <section class="name">
+            <img src="fcplm.jpg" alt="my photo">
+            <h3>Smekhunov <br> Andrey</h3>
+          </section>
+      <div class="main-container">
+          <section class="section" id="contacts">
+            <p class="section-title">Contacts</p> 
+            <pre>
+    Location: Rostov-on-Don, Russia 
+       Email: smekhunov@gmаil.com 
+      GitHub: <a class="link" href="https://github.com/AndreySmekhunov">AndreySmekhunov</a>
+    WhatsApp: +79O34O6275O
+            </pre>
+          </section>
 
+          <section class="section" id="summary">
+            <p class="section-title">Summary</p>
+          <p>I want to change my profession (now I am a CEO at constructing company). 
+            I try to learn frontend and data science. 
+            I'm stupid, but stubborn. Many years ago I wrote programs </p>   
+          </section>
+          <section class="section" id="skills">
+            <p class="section-title">Skills</p>
+          nothing :(
+      
+          </section>
+          <section class="section" id="education">
+            <p class="section-title">Education</p>
+            South Federal Unversity, 1988-1993, mathematist
+      
+          </section>
+          <section class="section" id="projects">
+            <p class="section-title">Projects</p>
+            <p><a class="link" 
+              href="https://andreysmekhunov.github.io/rsschool-cv">This site</a></p>
+          </section>
+          <section class="section" id="code">
+            <p class="section-title">code</p>
+            <pre class="code">
+function getMiddle(s)
+{
+  let l = s.length;
+  if (l < 3) return s;
+  let center = Math.floor(l/2);
+  if (l%2 > 0) return s[center] 
+  else return s[center-1] + s[center]
+}  
+            </pre>
+            </section>
+            <section class="section" id="courses">
+              <p class="section-title">courses</p>
+              JavaScript for beginners, Hexlet
+            </section>
+          <section class="section" id="english">
+            <p class="section-title">english</p>
+          Beginner  
+          </section>
+        </div>
     </main>
 
     <footer class="footer">
-
+<p>This resume was completed by a student<a class="link" 
+  href="https://github.com/AndreySmekhunov"> <b>AndreySmekhunov</b> </a> 
+  in the process of studying at <a class="link" href="https://rs.school/js-stage0/"> <b>RS School</b></a> (c) 2022 </p>
     </footer>
-    
+  <div class="logo">
+  <a class="link" href="https://rs.school/js-stage0/"> <img src="logo.jpg" alt="logo RSSchool"></a>
+  </div>
 </body>
+
 </html>

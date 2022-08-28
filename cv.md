@@ -13,10 +13,17 @@
 I want to change my profession (now I am a CEO an constructing company). I try to learn frontend and data science. I'm stupid, but stubborn. Many years ago I wrote programs 
 
 ## Skills:
-    nothing
+nothing
 
 ## Code example:
-[https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/javascript]
+function getMiddle(s)
+{
+  let l=s.length;
+  if (l<3) return s;
+  let center=Math.floor(l/2);
+  if (l%2>0) return s[center] 
+  else return s[center-1]+s[center]
+}
 
 ## Work experience
     [https://github.com/AndreySmekhunov/rsschool-cv/edit/gh-pages/cv.md]
@@ -25,4 +32,4 @@ I want to change my profession (now I am a CEO an constructing company). I try t
     South Federal Unversity, mathematist
 
 ## English 
-    I can read simple texts and write anything, using online translator and/or dictionary
+Beginner
