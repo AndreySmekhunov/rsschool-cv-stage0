@@ -52,7 +52,7 @@ const difficulties = [
       id: 'azathoth',
       name: 'azathoth',
       count: 16,
-      cardFace: './assets/Ancients/Azathoth.jpg',
+      cardFace: './assets/ancients/azathoth.jpg',
       stage:[],
       firstStage: {
         greenCards: 1,
@@ -74,7 +74,7 @@ const difficulties = [
       id: 'cthulhu',
       name: 'cthulhu',
       count: 15,
-      cardFace: './assets/Ancients/Cthulthu.jpg',
+      cardFace: './assets/ancients/cthulthu.jpg',
       firstStage: {
         greenCards: 0,
         blueCards: 2,
@@ -95,7 +95,7 @@ const difficulties = [
       id: 'iogSothoth',
       name: 'iogSothoth',
       count: 16,
-      cardFace: './assets/Ancients/iogSothoth.jpg',
+      cardFace: './assets/ancients/iogsothoth.jpg',
       firstStage: {
         greenCards: 0,
         blueCards: 1,
@@ -116,7 +116,7 @@ const difficulties = [
       id: 'shubNiggurath',
       name: 'shubNiggurath',
       count: 16,
-      cardFace: './assets/Ancients/shubNiggurath.jpg',
+      cardFace: './assets/ancients/shubniggurath.jpg',
       firstStage: {
         greenCards: 1,
         blueCards: 1,
@@ -206,6 +206,7 @@ const difficulties = [
         anyCard.random = Math.random();
         cardSetBrown.push(anyCard);
       }  
+
     }
     function createColorDeck() {
       let blueNum = 2;
