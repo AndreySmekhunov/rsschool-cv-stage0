@@ -52,7 +52,7 @@ const difficulties = [
       id: 'azathoth',
       name: 'azathoth',
       count: 16,
-      cardFace: 'assets/Ancients/Azathoth.jpg',
+      cardFace: './assets/ancients/azathoth.jpg',
       stage:[],
       firstStage: {
         greenCards: 1,
@@ -74,7 +74,7 @@ const difficulties = [
       id: 'cthulhu',
       name: 'cthulhu',
       count: 15,
-      cardFace: 'assets/Ancients/Cthulthu.jpg',
+      cardFace: './assets/ancients/cthulthu.jpg',
       firstStage: {
         greenCards: 0,
         blueCards: 2,
@@ -95,7 +95,7 @@ const difficulties = [
       id: 'iogSothoth',
       name: 'iogSothoth',
       count: 16,
-      cardFace: 'assets/Ancients/iogSothoth.jpg',
+      cardFace: './assets/ancients/iogsothoth.jpg',
       firstStage: {
         greenCards: 0,
         blueCards: 1,
@@ -116,7 +116,7 @@ const difficulties = [
       id: 'shubNiggurath',
       name: 'shubNiggurath',
       count: 16,
-      cardFace: 'assets/Ancients/shubNiggurath.jpg',
+      cardFace: './assets/ancients/shubniggurath.jpg',
       firstStage: {
         greenCards: 1,
         blueCards: 1,
@@ -179,7 +179,7 @@ const difficulties = [
         if (anyCard.range == 'easy') anyCard.rangeNum = 0
         else if (anyCard.range == 'normal') anyCard.rangeNum = 1
         else anyCard.rangeNum = 2;
-        anyCard.url = `../assets/MythicCards/blue/blue${i+1}.jpg`;
+        anyCard.url = `./assets/MythicCards/blue/blue${i+1}.jpg`;
         anyCard.random = Math.random();
         cardSetBlue.push(anyCard);
       }  
@@ -191,7 +191,7 @@ const difficulties = [
         if (anyCard.range == 'easy') anyCard.rangeNum = 0
         else if (anyCard.range == 'normal') anyCard.rangeNum = 1
         else anyCard.rangeNum = 2;
-        anyCard.url = `../assets/MythicCards/green/green${i+1}.jpg`;
+        anyCard.url = `./assets/MythicCards/green/green${i+1}.jpg`;
         anyCard.random = Math.random();
         cardSetGreen.push(anyCard);
       }  
@@ -202,7 +202,7 @@ const difficulties = [
         if (anyCard.range == 'easy') anyCard.rangeNum = 0
         else if (anyCard.range == 'normal') anyCard.rangeNum = 1
         else anyCard.rangeNum = 2;
-        anyCard.url = `../assets/MythicCards/brown/brown${i+1}.jpg`;
+        anyCard.url = `./assets/MythicCards/brown/brown${i+1}.jpg`;
         anyCard.random = Math.random();
         cardSetBrown.push(anyCard);
       }  
@@ -488,7 +488,7 @@ const difficulties = [
         hero = ancientsPerson;
     }
     ancientsPerson.id = ancientsData[i].id;
-    ancientsPerson.style.backgroundImage = `url(${ancientsData[i].cardFace})`;
+    ancientsPerson.style.backgroundImage = `url("${ancientsData[i].cardFace}")`;
     ancients.append(ancientsPerson);
   }
   document.querySelector('.ancientsBlock').addEventListener('click', selectAncients);
