@@ -59,7 +59,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 120px;
+  width: 320px;
 }
 
 
@@ -81,6 +81,7 @@ body {
   width: 32px;
   height: 32px;
   background-size: 32px 32px;
+  margin: 20px;
   background-position: center center;
   background-repeat: no-repeat;
   background-color: transparent;
