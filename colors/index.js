@@ -33,6 +33,7 @@ document.querySelector('.clear').addEventListener('click', clearColor);
 function clearColor() {
     if (isPlay) clearInterval(timeId);
     colorSub = '';
+    colorArr = [];
     isPlay = false;
     document.querySelector('.text').textContent = colorSub;
 
