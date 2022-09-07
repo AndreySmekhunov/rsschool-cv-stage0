@@ -31,7 +31,7 @@ function getMiddle(s)
     [https://andreysmekhunov.github.io/rsschool-cv/eldritch-codejam/]
 
 ## Образование (включая пройденные курсы и тренинги)
-    South Federal Unversity, mathematist, 1993
+    South Federal Unversity, mathematist,  1993
 
 ## English 
 Beginner 
