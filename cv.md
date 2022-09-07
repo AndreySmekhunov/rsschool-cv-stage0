@@ -7,13 +7,13 @@
 | Phone, WhatsApp, Telegram | +79034062750        |
 | email                     | smekhunov@gmail.com |
 | GitHub                    | [(https://github.com/AndreySmekhunov)]|
-| Discord | Andrew_Rostov |
+| Discord | Andrew2009#0588 |
  
 ## About me:
-I want to change my profession (now I am a CEO an constructing company). I try to learn frontend and data science. I'm stupid, but stubborn. Many years ago I wrote programs 
+I want to change my profession (now I am a CEO an constructing company). Now I successfully completed the course JS/FE Pre-School 2022Q2 and try to study in RS School JS/FE Stage 1.
 
 ## Skills:
-nothing
+Basic JS, HTML, CSS, Git
 
 ## Code example:
 function getMiddle(s)
@@ -26,7 +26,9 @@ function getMiddle(s)
 }
 
 ## Work experience
-    [https://github.com/AndreySmekhunov/rsschool-cv/edit/gh-pages/cv.md]
+    [https://andreysmekhunov.github.io/rsschool-cv/momentum/]
+    [https://andreysmekhunov.github.io/rsschool-cv/travel/]
+    [https://andreysmekhunov.github.io/rsschool-cv/eldritch-codejam/]
 
 ## Образование (включая пройденные курсы и тренинги)
     South Federal Unversity, mathematist
