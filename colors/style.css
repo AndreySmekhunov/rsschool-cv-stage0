@@ -1,0 +1,41 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+body {
+  min-width: 720px;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  background-color: gray;
+
+}
+
+.demo {
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: #FFF;
+}
+
+.palette {
+  position: relative;
+  width: 700px;
+  margin-top: 50px;
+  height: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.item {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+}

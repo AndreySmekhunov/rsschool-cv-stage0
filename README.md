@@ -1,3 +1,1 @@
-# rsschool-cv
-rs school stage #0
-https://github.com/AndreySmekhunov/rsschool-cv/
+https://andreysmekhunov.github.io/rsschool-cv/cv
